@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CareerPathDesk 是连接老板、老师和学生的求职陪跑工作台。"
+    />
+    <meta name="theme-color" content="#edf4ef" />
+    <link rel="stylesheet" href="./assets/site.css" />
+    <title>CareerPathDesk · 求职陪跑协作工作台</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回 CareerPathDesk 首页">
+        <span class="brand-mark" aria-hidden="true">CP</span>
+        <span>CareerPathDesk</span>
+      </a>
+      <nav aria-label="主要导航">
+        <a href="#workflow">工作方式</a>
+        <a href="#demo">产品演示</a>
+        <a href="#source">开放源码</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top" aria-labelledby="product-title">
+        <div class="hero-copy">
+          <p class="eyebrow">CAREER COACHING WORKSPACE · OPEN SOURCE</p>
+        <h1 id="product-title">一个工作台，连接老板、老师和学生</h1>
+          <p class="hero-summary">
+            把学生资料、服务协作、持续跟进和下一步安排放在同一条可追踪的链路中。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#demo">观看 3 分钟演示</a>
+            <a class="button button-secondary" href="#source">查看开放源码</a>
+          </div>
+          <p class="boundary-note">公开版本只包含合成数据，不含真实学生数据、账号或运行密钥。</p>
+        </div>
+
+        <div class="hero-board" aria-label="学生服务从邀请到持续跟进的协作关系">
+          <div class="board-heading">
+            <span>服务链路</span>
+            <span class="live-state"><i aria-hidden="true"></i> 人工判断始终在线</span>
+          </div>
+          <div class="board-path">
+            <div><span>01</span><strong>学生</strong><small>填写资料</small></div>
+            <b aria-hidden="true">→</b>
+            <div><span>02</span><strong>老师</strong><small>执行跟进</small></div>
+            <b aria-hidden="true">→</b>
+            <div><span>03</span><strong>老板</strong><small>复盘例外</small></div>
+          </div>
+          <div class="board-log" aria-hidden="true">
+            <p><time>09:30</time><span>资料已由学生自主补充</span></p>
+            <p><time>14:00</time><span>老师记录下一步与跟进时间</span></p>
+            <p><time>16:20</time><span>协作范围与人工结论已更新</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section roles" aria-labelledby="roles-title">
+        <p class="eyebrow">THREE VIEWS · ONE SERVICE</p>
+        <h2 id="roles-title">每个人只看见自己需要完成的事</h2>
+        <div class="role-grid">
+          <article data-role="学生">
+            <p class="role-index">01 · 学生</p>
+            <h3>完成资料与沟通偏好</h3>
+            <p>通过一次性邀请填写资料，在清晰边界内补充求职目标和沟通偏好。</p>
+          </article>
+          <article data-role="老师">
+            <p class="role-index">02 · 老师</p>
+            <h3>记录进展与明确下一步</h3>
+            <p>围绕自己负责或协作的学生连续跟进，留下可交接的行动信息。</p>
+          </article>
+          <article data-role="老板">
+            <p class="role-index">03 · 老板</p>
+            <h3>查看全局与处理例外</h3>
+            <p>掌握团队负载、待办风险和协作范围，在需要时完成人工复盘。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workflow" id="workflow" aria-labelledby="workflow-title">
+        <p class="eyebrow">THE SERVICE LOOP</p>
+        <h2 id="workflow-title">一条可持续交接的服务链路</h2>
+        <ol>
+          <li data-stage="学生填写"><strong>学生填写</strong><span>资料与沟通偏好</span></li>
+          <li data-stage="老师执行"><strong>老师执行</strong><span>跟进、记录与下一步</span></li>
+          <li data-stage="老板复盘"><strong>老板复盘</strong><span>全局、风险与协作范围</span></li>
+          <li data-stage="继续跟进"><strong>继续跟进</strong><span>把反馈带回下一轮服务</span></li>
+        </ol>
+      </section>
+
+      <section class="section architecture" aria-labelledby="architecture-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">CLEAR BOUNDARIES</p>
+            <h2 id="architecture-title">前端、后端和官网各自独立</h2>
+          </div>
+          <p>三个仓库通过同源 API 契约连接；官网只负责解释产品，不接触业务数据。</p>
+        </div>
+        <img
+          src="./assets/readme/architecture.svg"
+          alt="CareerPathDesk 官网、Vue 前端、Go API、PostgreSQL 与学生邀请链路的边界图"
+        />
+      </section>
+
+      <section class="section demo" id="demo" aria-labelledby="demo-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">REAL PRODUCT PROOF</p>
+            <h2 id="demo-title">三分钟看完完整服务流程</h2>
+          </div>
+          <p>演示覆盖老板、老师与学生的主要操作；画面使用示例身份，不包含可用凭据或真实学生资料。</p>
+        </div>
+        <video controls poster="./assets/readme/demo-cover.webp" preload="metadata">
+          <source src="./media/careerpathdesk-demo.mp4" type="video/mp4" />
+          你的浏览器不支持视频播放，可以前往 GitHub 仓库下载演示文件。
+        </video>
+        <p class="caption">录制于历史部署；界面中的旧访问地址仅用于演示，不代表当前在线服务。</p>
+      </section>
+
+      <section class="section source" id="source" aria-labelledby="source-title">
+        <p class="eyebrow">OPEN SOURCE · AGPL-3.0</p>
+        <h2 id="source-title">从你关心的那一层开始阅读</h2>
+        <div class="source-grid">
+          <a href="https://github.com/Confidence-huang/careerpathdesk-frontend">
+            <span>Vue 3 · TypeScript · Vite</span>
+            <strong>产品前端</strong>
+            <p>角色工作台、学生协作、跟进、邀请和响应式合成验收。</p>
+            <em>打开 frontend →</em>
+          </a>
+          <a href="https://github.com/Confidence-huang/careerpathdesk-backend">
+            <span>Go · Gin · PostgreSQL</span>
+            <strong>业务后端</strong>
+            <p>对象范围、事务命令、会话安全、迁移和确定性合成数据。</p>
+            <em>打开 backend →</em>
+          </a>
+        </div>
+      </section>
+
+      <section class="privacy-boundary" aria-labelledby="privacy-title">
+        <p class="eyebrow">PUBLIC REPOSITORY BOUNDARY</p>
+        <h2 id="privacy-title">可以公开看代码，不能把真实业务数据带进来</h2>
+        <p>
+          公开仓库不含真实学生数据、账号、邀请链接、联系方式、数据库、备份、环境文件、生产域名配置或内部运维记录。
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p><strong>CareerPathDesk</strong> · 为可持续交接的求职陪跑服务而设计</p>
+      <p>Released under the GNU Affero General Public License v3.0.</p>
+    </footer>
+  </body>
+</html>
